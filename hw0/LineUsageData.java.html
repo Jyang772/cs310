@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~/Documents/cs310/LineUsageData.java.html</title>
+<meta name="Generator" content="Vim/7.4">
+<meta name="plugin-version" content="vim7.4_v1">
+<meta name="syntax" content="java">
+<meta name="settings" content="use_css,pre_wrap,no_foldcolumn,prevent_copy=">
+<meta name="colorscheme" content="none">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #000000; background-color: #ffffff; }
+body { font-family: monospace; color: #000000; background-color: #ffffff; }
+* { font-size: 1em; }
+.Constant { color: #ff6060; }
+.Statement { color: #ffff00; }
+.Type { color: #00ff00; }
+-->
+</style>
+
+<script type='text/javascript'>
+<!--
+
+-->
+</script>
+</head>
+<body>
+<pre id='vimCodeElement'>
+
+<span class="Type">public</span> <span class="Type">class</span> LineUsageData {
+	<span class="Type">private</span> SinglyLinkedList&lt;Usage&gt; list;
+
+	<span class="Type">public</span> LineUsageData() {
+		list = <span class="Statement">new</span> SinglyLinkedList&lt;Usage&gt;();
+	}
+
+	<span class="Type">public</span> <span class="Type">void</span> addObservation(String username) {
+
+		<span class="Statement">for</span>(<span class="Type">int</span> i=<span class="Constant">0</span>; i&lt;list.size();i++) {
+			<span class="Statement">if</span>(username.equals(list.get(i).getUser())) {
+				list.get(i).add();
+				<span class="Statement">return</span>;
+			}
+		}
+
+		list.add(<span class="Statement">new</span> Usage(username, <span class="Constant">1</span>));
+	}
+
+	<span class="Type">public</span> Usage findMaxUsage() {
+		Usage max = <span class="Statement">new</span> Usage(<span class="Constant">null</span>, <span class="Constant">0</span>);
+
+		<span class="Statement">for</span>(<span class="Type">int</span> i=<span class="Constant">0</span>; i&lt;list.size(); i++)
+			<span class="Statement">if</span>(list.get(i).getCount() &gt; max.getCount())
+				max = list.get(i);
+		<span class="Statement">return</span> max;
+	}
+
+	<span class="Type">public</span> <span class="Type">int</span> size() {
+		<span class="Statement">return</span> list.size();
+	}
+}
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
