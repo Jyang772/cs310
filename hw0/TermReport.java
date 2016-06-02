@@ -17,9 +17,7 @@ public class TermReport {
 			line = in.nextLine();
 			Scanner s = new Scanner(line);
 			lineNumber = s.nextInt();
-			System.out.println("LINE #:" + lineNumber);
 			user = s.next();
-			System.out.println("USER: " + user);
 			lines[lineNumber-1].addObservation(user);
 		}
 
