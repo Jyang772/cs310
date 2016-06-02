@@ -11,21 +11,23 @@ public class TermReport {
 		//Read and process input
 		Scanner in = new Scanner(System.in);
 		String line, user;
-		int lineNumber;
+		int lineNumber = 0;
 		
 		while(in.hasNextLine()) {
 			line = in.nextLine();
 			Scanner s = new Scanner(line);
 			lineNumber = s.nextInt();
+			System.out.println("LINE #:" + lineNumber);
 			user = s.next();
-			lines[lineNumber].addObservation(user);
+			System.out.println("USER: " + user);
+			lines[lineNumber-1].addObservation(user);
 		}
 
 		//Output report
 		System.out.println("Line, Most Common User, Count");
 		
 		for(int i=1; i<=500; i++) {
-			System.out.println(i + ", " + lines[i-1].findMaxUsage());
+			System.out.println(i + ", " + lines[i-1].findMaxUsage()); //Call toString
 		}
 	}
 }
