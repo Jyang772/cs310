@@ -1,0 +1,14 @@
+//a
+Assignment: Exact: N^3 + 2, Tilde: N^3, Big O: N^3
+Compare:    Exact: (N^2)^2, Tilde: N^4, Big 0: N^4
+
+//b
+Assignment: Exact: 1/2N^2 + 1/2N + 2, Tilde: 1/2N^2, Big O: N^2
+Compare:    Exact: N(N+1), Tilde: N^2, Big O: N^2
+
+// c
+Assignment: Exact: 1/2N^4 + 2, Tilde: 1/2N^4, Big O: N^4
+Compare:    Exact: 1/2N^8 + 1/2N^4, Tilde: 1/2N^8, Big O: N^8 
+
+
+

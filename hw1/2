@@ -1,0 +1,14 @@
+//a
+Best Case Description: When all of the elements are ordered greatest to least.
+Array Access:	Exact: 2N-2
+Compare:	Exact: 2N-1 
+
+
+Worst Case Description: When all of the elements are ordered least to greatest.
+Array Access: Exact: 4N^2 - 6N + 2
+Compare:	Exact: 2N^2 - 3N + 1
+
+
+//b
+Best Case:  Big 0: N, Tilde: 2N
+Worse Case: Big 0: N^2, Tilde: 4N^2

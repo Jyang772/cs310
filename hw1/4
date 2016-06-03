@@ -1,0 +1,23 @@
+//a
+2^n
+2^(n/2)
+n^3
+n^2log(n)
+n^2
+n^1.5
+nlog(n) / log(2)
+nlog(n^2)
+nlogn
+n
+nlog(log(n))
+sqrt(n)
+37
+
+//b
+1. 2^n, 2^(n/2) , n^3, n^2log(n), n^2, n^1.5
+
+2. nlog(n)/log(2), nlog(n^2), nlogn
+
+3. n, nlog(log(n))
+
+

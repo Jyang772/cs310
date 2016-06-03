@@ -1,0 +1,2 @@
+a. Yes. Log base 2 of n is equal to log_10(n) / log_10(2). The constant multiplier can be omitted.
+b. Yes. log(n^2) == 2*log(n). Constant is omitted.

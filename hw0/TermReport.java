@@ -18,14 +18,14 @@ public class TermReport {
 			Scanner s = new Scanner(line);
 			lineNumber = s.nextInt();
 			user = s.next();
-			lines[lineNumber-1].addObservation(user);
+			lines[lineNumber-1].addObservation(user);  //#9 stored in [8]
 		}
 
 		//Output report
 		System.out.println("Line, Most Common User, Count");
 		
 		for(int i=1; i<=500; i++) {
-			System.out.println(i + ", " + lines[i-1].findMaxUsage()); //Call toString
+			System.out.println(i + ", " + lines[i-1].findMaxUsage()); //Call toString  //9 --> [8]
 		}
 	}
 }
