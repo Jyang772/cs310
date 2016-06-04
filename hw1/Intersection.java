@@ -39,14 +39,13 @@ public class Intersection {
 		Arrays.sort(nums2);	
 	
 		int k=0;
-		for(int i=0; i<nums1.length; i++) {
-
-			if((i==0) || (nums1[i] != nums1[i-1]))	//Check for duplicates in first array
+		for(int i=0; i<nums1.length; i++) { 		//Check for duplicates in first array
+			if((i==0) || (nums1[i] != nums1[i-1]))	//Take advantage of short-ciruit evaluation
 				for(int j=k; j<nums2.length; j++) {
 					if(nums1[i] == nums2[j]){
-						if((j==0 || i==0) || ((nums2[j-1] != nums2[j]) && (nums1[i-1] != nums1[i])))  //Check for duplicates in result
+						if((j==0 || i==0) || ((nums2[j-1] != nums2[j])))  //Check for duplicates in result
 							dup.add(nums1[i]);
-						k=j+1;
+						k=j+1;		//Don't check [j] < current	
 					}
 				}
 		}
