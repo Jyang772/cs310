@@ -1,0 +1,11 @@
+//System.out.println("Output: " + x);
+"Output: 3"
+ is outputted, because the variable x in the object O is shadowed by the variable x in the method's parameter.
+
+//System.out.println("Output: " + O.x);
+"Output: 5"
+ is outputted, since the value of the member x in the object O has been changed by "this.x = 5".
+
+//System.out.println("Output: " + o.x);
+"Output: 5"
+ is outputted because all instances of O share the same variable x. 
