@@ -1,4 +1,6 @@
 #1
+
+//NOTE: HW1 asks for operations on "sum". These answers are for operations overall (sum,i,j)
 //a
 Assignment: Exact: 2N^4 + 2, Tilde: 2N^2, Big O: N^2
 Compare:    Exact: N^4+2N^2+1, Tilde: N^4, Big 0: N^4
