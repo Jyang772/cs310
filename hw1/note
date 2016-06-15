@@ -1,0 +1,5 @@
+To make this O(n)O(n), the basic algorithm is to walk both arrays in one loop in parallel, in a merge-like manner.
+
+That is, you start with index i=0 in the first array and j=0 in the second array, and you stop when one of your indexes moved past the end of its array. At each step in the single loop, you compare a[i] with b[j]. If a[i] is greater than b[j], you bump j by 1. If it is smaller, you bump i by 1. If a[i] is equal to b[j], you bump both i and j and record a[i] as a duplicate.
+
+That's all. As each step results in at least one array element that will never be looked at again, this is O(n)O(n).

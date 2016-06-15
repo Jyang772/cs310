@@ -1,0 +1,9 @@
+The first two problems were relatively harder compared to the rest. To find the exact running time expression, I would start with a small test case N, such as 5 and go through the code by hand, counting the number of times an operation is called. 
+This allowed me to discover patterns, the partial sum sequences appearing quite often. 
+
+For the plot, I have some R knowledge, so I was able to make a plot with a legend. It looks better than plotting in Python, maybe it has something to do with vector graphics vs. rasterizing. 
+
+In Intersection.java, my first attempt (commented out), had a runtime that was only slightly better than N^2. 
+My second attempt is much better in terms of scalability. The searching part only has to loop through N times, assuming the arrays are the same size. Otherwise, it will only have to loop through the length of the smaller array. 
+
+It also takes advantage of a feature of Java, the short circuit evaluation, so that I can create control statements that would otherwise not work due to accesing an array at a negative index.

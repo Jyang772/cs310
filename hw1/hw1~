@@ -1,0 +1,148 @@
+#1
+//a
+Assignment: Exact: 2N^4 + 2, Tilde: 2N^2, Big O: N^2
+Compare:    Exact: N^4+2N^2+1, Tilde: N^4, Big 0: N^4
+
+//b
+Assignment: Exact: 1/2N^2 + 1/2N + 2, Tilde: 1/2N^2, Big O: N^2
+Compare:    Exact: N(N+1)/2 + (N+1), Tilde: 1/2N^2, Big O: N^2
+
+// c
+Assignment: Exact: 1/2N^4 + N^2 + 2, Tilde: 1/2N^4, Big O: N^4
+Compare:    Exact: 1/2N^4 + 3/2N^2 + 1, Tilde: 1/2N^4, Big O: N^4 
+
+--------------------------------------------------------------
+#2
+
+//a
+Best Case Description: When all of the elements are ordered greatest to least. The while loop only has to run through once. The boolean flag will be set to false in the beginning of the while loop, and not set to true becaues the if statement num[j] < num[j+1] is never true.
+Array Access:	Exact: 2N-2
+Compare:	Exact: 2N+1 
+
+
+Worst Case Description: When all of the elements are ordered least to greatest. This results in the largest amount of times the array is access and compare operations are called. 
+Array Access: Exact: 4N^2 - 4N 
+Compare:	Exact: 2N^2 - N 
+
+
+//b
+Best Case:  Big 0: N, Tilde: 2N
+Worse Case: Big 0: N^2, Tilde: 4N^2
+
+---------------------------------------------------------------
+
+#3
+a. Yes. Log base 2 of n is equal to log_10(n) / log_10(2). The constant multiplier (log_10(2)) can be omitted.
+b. Yes. log(n^2) == 2*log(n). Constant (2) is omitted.
+c. Source: plot.R , Plot: plot.png
+----------------------------------------------------------------
+
+#4
+//a
+37
+sqrt(n)
+nlog(log(n))
+n
+nlog(n)
+nlog(n^2)
+nlog(n) / log(2)  //n*log base 2 of n
+n^1.5
+n^2
+n^2log(n)
+n^3
+2^(n/2)
+2^n
+
+
+//b
+1. 2^n, 2^(n/2) , n^3, n^2log(n), n^2, n^1.5
+
+2. nlog(n)/log(2), nlog(n^2), nlogn
+
+3. n, nlog(log(n))
+
+------------------------------------------------------------------
+
+#5
+//System.out.println("Output: " + x);
+"Output: 3"
+ is outputted, because the variable x in the object O is shadowed by the variable x in the method's parameter.
+
+//System.out.println("Output: " + O.x);
+"Output: 5"
+ is outputted, since the value of the member x in the object O has been changed by "this.x = 5".
+
+//System.out.println("Output: " + o.x);
+"Output: 5"
+ is outputted because all instances of O share the same variable x.
+
+------------------------------------------------------------------
+
+#6
+a. 
+Abstract classes contain one or more abstract methods, that have a prototype but no definition. It can also contain concrete methods. An interface is used to achieve full abstraction, so it cannot have concrete methods.  
+
+b. 
+Implements is used to implement an interface. Extends is used to extend a class so you can override the implementation of certain methods in the class. You can implement multiple interfaces, but you can't extend multiple classes. Java doesn't support multiple inheritance.
+
+c.
+An example use case for an interface, would be an abstract Shape class. It would contain methods area() and perimeter(). Different shapes can implement the Shape class. 
+
+An example use case for an abstract class would be a class for employees. Another class such as salary can extend from the abstract class.
+
+-------------------------------------------------------------------
+
+#7
+a.
+So that the Java Virtual Machine can access main().
+
+b.
+The main function must be static, so that it can be executed without an object instance.
+
+c.
+main() does not return a value. In the Java specifications, a program may exit before the main method finishes, so a return value is not necessary.
+
+-------------------------------------------------------------------- 
+
+#8
+a.
+add(4) --> {4}
+add(8) --> {8,4}
+add(1) --> {1,8,4}
+add(6) --> {6,1,8,4}
+remove() --> {1,8,4}
+remove() --> {8,4}
+
+b.
+add(4) --> {4}
+add(8) --> {4,8}
+add(1) --> {4,8,1}
+add(6) --> {4,8,1,6}
+remove() --> {8,1,6}
+remove() --> {1,6}
+
+c.
+add(4) --> {4}
+add(8) --> {4,8}
+add(1) --> {1,4,8}
+add(6) --> {1,4,6,8}
+remove() --> {4,6,8}
+remove() --> {6,8}
+
+---------------------------------------------------------------------
+
+#9
+a. 
+Third
+Second
+First
+
+b.
+First
+Second
+Third
+
+---------------------------------------------------------------------
+
+#10
+Intersection.java
