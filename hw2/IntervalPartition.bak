@@ -1,0 +1,95 @@
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Stack;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Queue;
+import java.util.PriorityQueue;
+
+public class IntervalPartition {
+	
+	public static class Rooms implements Comparable<Rooms> {
+		int last;
+		ArrayList<Integer[]> classes;
+		
+		public Rooms(ArrayList<Integer[]> classes, int key) {
+			this.classes = classes;
+			this.last = key;
+		}		
+		public int compareTo(Rooms other) {
+			return (this.last - other.last);
+		}
+	}
+	
+	public static void main(String [] args) {
+
+		int[] arr = new int[args.length];
+		for(int i=0; i<args.length; i++)
+			arr[i] = Integer.parseInt(args[i]);
+		
+		ArrayList<Integer[]> intervals = new ArrayList<Integer[]>();
+		
+		{ int i=0;		
+			while((i+1) < arr.length) {
+				intervals.add(new Integer[]{arr[i],arr[i+1]});
+				i+=2;
+			}
+		}	
+	/*	for(Integer[] e: intervals){
+			System.out.println("Interval: " + e[0] + " " + e[1]);
+		}
+	*/
+		//Sort intervals by first value
+		Collections.sort(intervals,new Comparator<Integer[]>() {
+			public int compare(Integer[] a, Integer[] b) {
+				return(Integer)(a[0]).compareTo(b[0]);
+			}
+		});
+
+		Stack<Integer[]> st = new Stack<Integer[]>();
+		Integer[] top = new Integer[2];
+		st.push(intervals.get(0));
+		
+		
+	
+		ArrayList<ArrayList<Integer[]>> rooms = new ArrayList<ArrayList<Integer[]>>();
+		rooms.add(new ArrayList<Integer[]>());
+		
+		rooms.get(0).add(intervals.get(0));
+				
+		PriorityQueue<Rooms> q = new PriorityQueue<>();
+		q.add(new Rooms(rooms.get(0),intervals.get(0)[1]));
+		
+		int d = 0;
+		Rooms temp;	
+		for(int i=1; i<intervals.size(); i++) {
+			temp = q.peek();
+			System.out.println(temp.last);
+			System.out.println(intervals.get(i)[0]);
+			System.out.println("---");
+			if(intervals.get(i)[0] > temp.last){
+				q.poll();	
+				temp.classes.add(intervals.get(i));
+				temp.last = intervals.get(i)[1];
+				q.add(new Rooms(temp.classes,temp.last));
+			}	
+			else {
+				d++;
+				rooms.add(new ArrayList<Integer[]>());
+				rooms.get(d).add(intervals.get(i));
+				q.add(new Rooms(rooms.get(d),intervals.get(i)[1]));
+			}
+		}		
+		
+	
+		for(Rooms r : q){ 
+				for(Integer[] a : r.classes) {
+	   				System.out.print("[" + a[0] + "," + a[1] + "]");
+				}
+			System.out.println();
+		}
+			
+	}
+}
+
+
