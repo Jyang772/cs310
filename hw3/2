@@ -1,0 +1,19 @@
+For a sparse graph, Dijkstra's algorithm has a runtime of O((E+V)logV) if implemented with a priority queue that has a decrease-key operation.
+E - # of edges
+V - # of vertices
+
+First, each vertex is inserted into a min-heap priority queue. There are V insert operations, which results in a total insertion time of O(VlogV).
+Depending on how the decrease-key operation is implemented, it can have a runtime of O(ElogV), since it will be called at most E times. 
+
+For a dense graph, the number of edges can be V(V-1)/2 ~ V^2
+Then, the total runtime becomes O((E+V^2)logV) since the decrease-key can be called n(n-1)/2 times. Thus we may need to check all vertices in a complete graph still in the priority-queue. 
+
+Runtime analysis: 
+Extracting the minimum element from the PQ: O(logV)
+
+For each adjacent vertex: O(E) //~V^2 for dense graph
+	Update Priority Queue (decrease-key) : O(logV)
+
+Inside loop: O(ElogV) 
+
+Total for dense graph: O((V+V^2)logV)

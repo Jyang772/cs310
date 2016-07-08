@@ -1,0 +1,13 @@
+
+For the first problem, I implemented the textbook school multiplication method. It is naive, and has a runtime of n^2
+
+                //Textbook multiplication method, not optimal (n^2)
+                //Multiply two numbers as taught in school
+                // 123
+                //x 49
+                //----
+                //  49
+                //x123
+                //----
+
+

@@ -1,0 +1,24 @@
+15:03:29.959 [main] WARN  org.pcap4j.util.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.dlt.raw, use default value: null
+15:03:29.990 [main] WARN  org.pcap4j.util.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.inet, use default value: null
+15:03:29.990 [main] WARN  org.pcap4j.util.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.inet6, use default value: null
+15:03:29.990 [main] WARN  org.pcap4j.util.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.packet, use default value: null
+15:03:29.990 [main] WARN  org.pcap4j.util.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.link, use default value: null
+15:03:30.009 [main] INFO  o.p.packet.factory.PacketFactories - Succeeded in FactoryBinder.getInstance()
+AAAAAAAaa
+AAAAAAAaa
+AAAAAAAaa
+Reached end of file.
+Node Count: 30
+CC: 0, 28 Nodes Total
+-Without Maximum Spanning Tree
+	135.8.60.182,14
+	172.16.113.105,6
+	172.16.112.20,6
+-With Maximum Spanning Tree (Weight:2247)
+	135.8.60.182,14
+	172.16.114.207,4
+	192.168.1.10,4
+CC: 1, 2 Nodes Total
+-Without Maximum Spanning Tree
+	224.0.0.9,1
+	192.168.1.1,1

@@ -1,0 +1,8 @@
+Justin Yang
+
+This project was challenging because we had to learn Graphstream's API. If the API docs were better organized, that could have shaved off some time looking through the pages searching for a function call.
+I implemented Kruskal's algorithm for finding the MST, and used Depth-First Search since it was more consistent and easier to implement with my code.  
+
+
+1. High degree nodes mean that, that node is receiving/sending packets to a higher number of computers than other nodes. 
+2. High degree nodes in the MST, represent computers sending large amounts of data between connected nodes. In the MST, these nodes are more important because a lot of traffic goes through those nodes. 
