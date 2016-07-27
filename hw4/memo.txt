@@ -1,0 +1,68 @@
+#1
+StairsSlow.java
+	I realized that the number of distinct ways to climb to the top of a staircase with N steps corresponds to the Nth fibonacci number. Therefore, to find the number of unique ways, I just have to find the Nth fibonacci sequence via the standard recursive formula:
+	fib(0) = 1
+	fib(1) = 1
+	fib(n) = fib(n-1) + fib(n-2)
+
+Stairs.java
+	There are three ways that I found can reduce the running time of finding the distinct number of ways to climb to the top. The first way is the simplest, which is just finding the Nth fibonacci number iteratively with a for-loop. 
+	
+	The second way is using dynamic programming, where I have a BigInteger array of size n+1. The base case:
+	fib[0] = 1
+	fib[1] = 1
+	
+	for(i from 2 to N)
+		fib[i] = fib[i-1] + fib[i-2]
+
+	The third way is to utilize something called tail recursion. This is a technique that I learned from the Wikipedia article on tail calls. Essentially, the recursive function is constructed such that the call to itself is the last call in the function. This means that the compiler will optimize the function such that it becomes a for loop. Therefore it has a running time of O(n). The program accomplishes this by keeping track of a running total, so that it only needs the function's return address on the stack, and does not have to compute the fib(n-1) or fib(n-2) from scratch. 
+	For example, if n=5
+	steps(5,1,0)
+	steps(4,1,1)
+	steps(3,2,1)
+	steps(2,3,2)
+	steps(1,5,3)	
+	When it reaches a terminating condition, the function just needs to return the running total all the way up to the top.
+	
+********************************************************************
+
+#2
+
+For this problem, I used a stack to keep track of the indices for the histogram.Stack keeps heights smaller than the current hist[top]
+
+Each time a bar is lower than the previous bar, we have to calculate the area of the rectangle from the top of the stack as the lowest bar in the group.
+
+	Create new stack
+	From i to N
+		If stack is empty or hist[stack.top()] <= hist[i]
+			stack.push(i)
+			i++
+		Else
+			top = stack.pop()
+			if(stack.empty())
+				area = hist[top] * i
+			else
+				area = hist[top] * (i-stack.top()-1)	
+
+			maxArea = MAX(maxArea,area)
+
+	While(!stack.empty())
+		top = stack.pop()
+                        if(stack.empty())
+                                area = hist[top] * i
+                        else
+                                area = hist[top] * (i-stack.top()-1)        
+
+                        maxArea = MAX(maxArea,area)
+
+The formula for the area of a rectangle in the histogram comes from the fact that you have to find the left and right indices for the rectangle.
+	 index:    0     1     2                
+                |-----|-----|-----|
+         i:     0     1     2     3     
+                Left index of rect. = i - stack.top - 1;
+                Right index of rect = i;
+
+***********************************************************************	
+#3
+
+The optimum subset contains the items {4,2}
