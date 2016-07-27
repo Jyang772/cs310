@@ -1,0 +1,37 @@
+#1
+
+Function calls:
+
+onMsgUserAuthRequest(); //AuthenticationProtocolServer.java
+KBIPasswordAuthenticationServer::authenticate()
+NativeAuthenticationProvider::getInstance()
+
+getInstance() returns an authentication configuration which is parsed from the platform.xml file.
+
+if NativeAuthenticationProvider::logonUser()
+	CS310AuthenticationProvider::file2String()	
+	NativeAuthenticationProvider::getSha()
+	sendUserAuthSuccess()
+	service.init()  //transport/Service.java
+	service.start()	//Starts CatShellProvider instance 
+	CatShellProvider::start() //Display victory.txt
+
+else
+	log.info() //appends to logfile
+	SshMsgUserAuthInfoRequest()
+	CS310AuthenticationProvider::file2String()
+	CS310AuthenticationProvider::getSha()
+
+return
+	
+Once a password is entered, the function authenticate of the class KBIPasswordAuthenticationServer gets invoked. Inside, an instance of NativeAuthenticationProvider is instantiated. This instance is used to check whether the password a user inputs is equal to the password that is in the "secret" file.
+
+If the first three bytes of the SHA-1 hash  of the password in the secret file matches that of the user's input, then the user is authorized. A victory message is displayed and the server closes the connection. 
+If the user fails to input the correct password, then the server displays a debug message that includes an ASCII cat and also provides the ASCII values of the three SHA-1 hash bytes of the correct password and that of the user's. The user then gets prompted to try again.
+
+#2
+Since SHA-1 is a one way function, the only feasible attack would be to apply brute force to find all possible combinations of a set of characters. I wrote a program that allows the user to generate n-length passwords and will output ones that, when hashed, the first three bytes of the hash match the hash of the secret password. 
+
+#3
+The configuration file that is read is platform.xml
+Implemented SloppyAuthenticationProvider using edit distance. This compares two plaintext strings and if the edit distance between them is less than or equal to 2, then the user is authenticated.
