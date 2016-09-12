@@ -1,0 +1,786 @@
+4
+-9
+-2
+-2
+0
+-1
+-1
+0
+-2
+-1
+-1
+-1
+-1
+-2
+-1
+1
+0
+-3
+-2
+0
+-2
+-1
+0
+-4
+-1
+5
+0
+-2
+-3
+1
+0
+-2
+0
+-3
+-2
+2
+-1
+-3
+-2
+-1
+-1
+-3
+-2
+-3
+-1
+0
+-1
+-4
+-2
+0
+6
+1
+-3
+0
+0
+0
+1
+-3
+-3
+0
+-2
+-3
+-2
+1
+0
+-4
+-2
+-3
+3
+0
+-1
+-4
+-2
+-2
+1
+6
+-3
+0
+2
+-1
+-1
+-3
+-4
+-1
+-3
+-3
+-1
+0
+-1
+-4
+-3
+-3
+4
+1
+-1
+-4
+0
+-3
+-3
+-3
+9
+-3
+-4
+-3
+-3
+-1
+-1
+-3
+-1
+-2
+-3
+-1
+-1
+-2
+-2
+-1
+-3
+-3
+-2
+-4
+-1
+1
+0
+0
+-3
+5
+2
+-2
+0
+-3
+-2
+1
+0
+-3
+-1
+0
+-1
+-2
+-1
+-2
+0
+3
+-1
+-4
+-1
+0
+0
+2
+-4
+2
+5
+-2
+0
+-3
+-3
+1
+-2
+-3
+-1
+0
+-1
+-3
+-2
+-2
+1
+4
+-1
+-4
+0
+-2
+0
+-1
+-3
+-2
+-2
+6
+-2
+-4
+-4
+-2
+-3
+-3
+-2
+0
+-2
+-2
+-3
+-3
+-1
+-2
+-1
+-4
+-2
+0
+1
+-1
+-3
+0
+0
+-2
+8
+-3
+-3
+-1
+-2
+-1
+-2
+-1
+-2
+-2
+2
+-3
+0
+0
+-1
+-4
+-1
+-3
+-3
+-3
+-1
+-3
+-3
+-4
+-3
+4
+2
+-3
+1
+0
+-3
+-2
+-1
+-3
+-1
+3
+-3
+-3
+-1
+-4
+-1
+-2
+-3
+-4
+-1
+-2
+-3
+-4
+-3
+2
+4
+-2
+2
+0
+-3
+-2
+-1
+-2
+-1
+1
+-4
+-3
+-1
+-4
+-1
+2
+0
+-1
+-3
+1
+1
+-2
+-1
+-3
+-2
+5
+-1
+-3
+-1
+0
+-1
+-3
+-2
+-2
+0
+1
+-1
+-4
+-1
+-1
+-2
+-3
+-1
+0
+-2
+-3
+-2
+1
+2
+-1
+5
+0
+-2
+-1
+-1
+-1
+-1
+1
+-3
+-1
+-1
+-4
+-2
+-3
+-3
+-3
+-2
+-3
+-3
+-3
+-1
+0
+0
+-3
+0
+6
+-4
+-2
+-2
+1
+3
+-1
+-3
+-3
+-1
+-4
+-1
+-2
+-2
+-1
+-3
+-1
+-1
+-2
+-2
+-3
+-3
+-1
+-2
+-4
+7
+-1
+-1
+-4
+-3
+-2
+-2
+-1
+-2
+-4
+1
+-1
+1
+0
+-1
+0
+0
+0
+-1
+-2
+-2
+0
+-1
+-2
+-1
+4
+1
+-3
+-2
+-2
+0
+0
+0
+-4
+0
+-1
+0
+-1
+-1
+-1
+-1
+-2
+-2
+-1
+-1
+-1
+-1
+-2
+-1
+1
+5
+-2
+-2
+0
+-1
+-1
+0
+-4
+-3
+-3
+-4
+-4
+-2
+-2
+-3
+-2
+-2
+-3
+-2
+-3
+-1
+1
+-4
+-3
+-2
+11
+2
+-3
+-4
+-3
+-2
+-4
+-2
+-2
+-2
+-3
+-2
+-1
+-2
+-3
+2
+-1
+-1
+-2
+-1
+3
+-3
+-2
+-2
+2
+7
+-1
+-3
+-2
+-1
+-4
+0
+-3
+-3
+-3
+-1
+-2
+-2
+-3
+-3
+3
+1
+-2
+1
+-1
+-2
+-2
+0
+-3
+-1
+4
+-3
+-2
+-1
+-4
+-2
+-1
+3
+4
+-3
+0
+1
+-1
+0
+-3
+-4
+0
+-3
+-3
+-2
+0
+-1
+-4
+-3
+-3
+4
+1
+-1
+-4
+-1
+0
+0
+1
+-3
+3
+4
+-2
+0
+-3
+-3
+1
+-1
+-3
+-1
+0
+-1
+-3
+-2
+-2
+1
+4
+-1
+-4
+0
+-1
+-1
+-1
+-2
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+-2
+0
+0
+-2
+-1
+-1
+-1
+-1
+-1
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+-4
+1
+Protein1	Protein1	-2119
+Protein1	Protein2	-1453
+Protein1	Protein3	-1632
+Protein1	Protein4	-1567
+Protein1	Protein5	-1648
+Protein1	Protein6	-934
+Protein1	Protein7	-1606
+Protein1	Protein8	-139
+Protein1	Protein9	-2020
+Protein1	Protein10	-2025
+Protein1	Protein11	-706
+Protein1	Protein12	-701
+Protein1	Protein13	-510
+Protein1	Protein14	-1783
+Protein1	Protein15	-1736
+Protein1	Protein16	-1789
+Protein1	Protein17	-1018
+Protein1	Protein18	-528
+Protein1	Protein19	-1620
+Protein1	Protein20	-1669
+Protein2	Protein2	-2039
+Protein2	Protein3	-1364
+Protein2	Protein4	-1924
+Protein2	Protein5	-1370
+Protein2	Protein6	-881
+Protein2	Protein7	-1450
+Protein2	Protein8	-131
+Protein2	Protein9	-1442
+Protein2	Protein10	-1444
+Protein2	Protein11	-684
+Protein2	Protein12	-685
+Protein2	Protein13	-447
+Protein2	Protein14	-1526
+Protein2	Protein15	-1487
+Protein2	Protein16	-1530
+Protein2	Protein17	-922
+Protein2	Protein18	-479
+Protein2	Protein19	-1361
+Protein2	Protein20	-1377
+Protein3	Protein3	-2087
+Protein3	Protein4	-1452
+Protein3	Protein5	-2037
+Protein3	Protein6	-963
+Protein3	Protein7	-1470
+Protein3	Protein8	-74
+Protein3	Protein9	-1626
+Protein3	Protein10	-1631
+Protein3	Protein11	-684
+Protein3	Protein12	-738
+Protein3	Protein13	-483
+Protein3	Protein14	-1628
+Protein3	Protein15	-1617
+Protein3	Protein16	-1642
+Protein3	Protein17	-1030
+Protein3	Protein18	-540
+Protein3	Protein19	-1908
+Protein3	Protein20	-1675
+Protein4	Protein4	-2089
+Protein4	Protein5	-1458
+Protein4	Protein6	-887
+Protein4	Protein7	-1553
+Protein4	Protein8	-102
+Protein4	Protein9	-1558
+Protein4	Protein10	-1560
+Protein4	Protein11	-669
+Protein4	Protein12	-696
+Protein4	Protein13	-473
+Protein4	Protein14	-1648
+Protein4	Protein15	-1609
+Protein4	Protein16	-1652
+Protein4	Protein17	-963
+Protein4	Protein18	-500
+Protein4	Protein19	-1457
+Protein4	Protein20	-1495
+Protein5	Protein5	-2088
+Protein5	Protein6	-952
+Protein5	Protein7	-1478
+Protein5	Protein8	-76
+Protein5	Protein9	-1632
+Protein5	Protein10	-1637
+Protein5	Protein11	-687
+Protein5	Protein12	-734
+Protein5	Protein13	-462
+Protein5	Protein14	-1634
+Protein5	Protein15	-1622
+Protein5	Protein16	-1648
+Protein5	Protein17	-1026
+Protein5	Protein18	-531
+Protein5	Protein19	-1900
+Protein5	Protein20	-1681
+Protein6	Protein6	-1923
+Protein6	Protein7	-928
+Protein6	Protein8	-12
+Protein6	Protein9	-948
+Protein6	Protein10	-948
+Protein6	Protein11	-811
+Protein6	Protein12	-860
+Protein6	Protein13	-363
+Protein6	Protein14	-954
+Protein6	Protein15	-967
+Protein6	Protein16	-960
+Protein6	Protein17	-1053
+Protein6	Protein18	-475
+Protein6	Protein19	-963
+Protein6	Protein20	-942
+Protein7	Protein7	-2082
+Protein7	Protein8	-93
+Protein7	Protein9	-1607
+Protein7	Protein10	-1612
+Protein7	Protein11	-716
+Protein7	Protein12	-728
+Protein7	Protein13	-484
+Protein7	Protein14	-1717
+Protein7	Protein15	-1767
+Protein7	Protein16	-1723
+Protein7	Protein17	-991
+Protein7	Protein18	-520
+Protein7	Protein19	-1475
+Protein7	Protein20	-1517
+Protein8	Protein8	-2449
+Protein8	Protein9	-154
+Protein8	Protein10	-151
+Protein8	Protein11	-99
+Protein8	Protein12	-23
+Protein8	Protein13	-285
+Protein8	Protein14	-108
+Protein8	Protein15	-109
+Protein8	Protein16	-106
+Protein8	Protein17	-106
+Protein8	Protein18	-198
+Protein8	Protein19	-66
+Protein8	Protein20	-66
+Protein9	Protein9	-2125
+Protein9	Protein10	-2118
+Protein9	Protein11	-710
+Protein9	Protein12	-700
+Protein9	Protein13	-518
+Protein9	Protein14	-1772
+Protein9	Protein15	-1718
+Protein9	Protein16	-1770
+Protein9	Protein17	-1036
+Protein9	Protein18	-517
+Protein9	Protein19	-1619
+Protein9	Protein20	-1668
+Protein10	Protein10	-2123
+Protein10	Protein11	-710
+Protein10	Protein12	-700
+Protein10	Protein13	-520
+Protein10	Protein14	-1777
+Protein10	Protein15	-1723
+Protein10	Protein16	-1775
+Protein10	Protein17	-1036
+Protein10	Protein18	-518
+Protein10	Protein19	-1624
+Protein10	Protein20	-1673
+Protein11	Protein11	-1849
+Protein11	Protein12	-1089
+Protein11	Protein13	-338
+Protein11	Protein14	-725
+Protein11	Protein15	-715
+Protein11	Protein16	-722
+Protein11	Protein17	-835
+Protein11	Protein18	-467
+Protein11	Protein19	-690
+Protein11	Protein20	-720
+Protein12	Protein12	-1886
+Protein12	Protein13	-362
+Protein12	Protein14	-745
+Protein12	Protein15	-742
+Protein12	Protein16	-752
+Protein12	Protein17	-852
+Protein12	Protein18	-543
+Protein12	Protein19	-753
+Protein12	Protein20	-721
+Protein13	Protein13	-2408
+Protein13	Protein14	-503
+Protein13	Protein15	-490
+Protein13	Protein16	-501
+Protein13	Protein17	-519
+Protein13	Protein18	-732
+Protein13	Protein19	-455
+Protein13	Protein20	-482
+Protein14	Protein14	-2093
+Protein14	Protein15	-1832
+Protein14	Protein16	-2073
+Protein14	Protein17	-1033
+Protein14	Protein18	-562
+Protein14	Protein19	-1647
+Protein14	Protein20	-1663
+Protein15	Protein15	-2080
+Protein15	Protein16	-1837
+Protein15	Protein17	-1040
+Protein15	Protein18	-555
+Protein15	Protein19	-1594
+Protein15	Protein20	-1637
+Protein16	Protein16	-2095
+Protein16	Protein17	-1042
+Protein16	Protein18	-563
+Protein16	Protein19	-1660
+Protein16	Protein20	-1668
+Protein17	Protein17	-2083
+Protein17	Protein18	-624
+Protein17	Protein19	-1019
+Protein17	Protein20	-1013
+Protein18	Protein18	-2362
+Protein18	Protein19	-521
+Protein18	Protein20	-548
+Protein19	Protein19	-2053
+Protein19	Protein20	-1680
+Protein20	Protein20	-2079

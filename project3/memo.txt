@@ -1,0 +1,15 @@
+Justin Yang
+
+This project was not as difficult as the first or second one, mostly because we had worked with Graphstream API before. 
+
+ProteinCompare.java - Implemented Needleman-Wunsch algorithm. Straight-forward.
+ProteinCompareHirschberg.java - Implemented Hirschberg's algorithm to get edit distance. Straight-forward. 
+
+ShowAlignment.java - Had a problem if one of there was two fasta files of the same species. 
+
+Visualize.java-
+
+The graph showed which species had p53 proteins that were similar to each other's. Some species had no similarities in their p53 proteins with others, or had similarities that had an edit distance beyond the threshold. These are nodes with no edges. 
+SingleGraph() only allows one edge between two nodes, so check for duplicates.
+The threshold was set to the mean minimum edit distance. 
+
